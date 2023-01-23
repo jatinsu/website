@@ -6,11 +6,38 @@
     color:aliceblue;
     text-align: center;
     font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #54b3d6);
+    background: -webkit-linear-gradient(black, #54b3d6);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: animate 10s linear infinite;
 }
+
+.wip {
+    --bg-size: 400%;
+    --color-one: #d7e1e4;
+    --color-two: #54b3d6;
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: move-bg 25s linear infinite;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
 
 .resume{
     text-align: center;
