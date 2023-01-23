@@ -2,18 +2,9 @@
     font-family: sans-serif;
 }
 
-.wip{
-    color:aliceblue;
+.wip {
     text-align: center;
     font-size: 72px;
-    background: -webkit-linear-gradient(black, #54b3d6);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: animate 10s linear infinite;
-}
-
-.wip {
     --bg-size: 400%;
     --color-one: #d7e1e4;
     --color-two: #54b3d6;
