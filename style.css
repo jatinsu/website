@@ -46,7 +46,7 @@ body {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.resume__link:hover {
+.resume__link:hover, .resume__link:active{
     color: #fff;
     box-shadow: inset 400px 0 0 0 #54b3d6;;
 }
