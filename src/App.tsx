@@ -7,17 +7,11 @@ function App() {
   
   return (
     <>
-      <section>
-        <span className="hi-text">Hi.</span>
-
-      </section>
+      <div className="hi-text">Hi.</div>
       {/* find a better way to do this */}
       <div className="test"></div>
       <div className='scroll-element'>
-        Scroll
-        <div>
           <img className='animate-scroll' src={DownArrow} alt="Down Arrow" />
-        </div>
       </div>
     </>
   )
