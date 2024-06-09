@@ -21,11 +21,12 @@ body{
 }
 
 .hi-text{
-    /* physical div this big for arrow key */
-    height: 90vh;
+    /* physically make the div this big for arrow key */
+    height: 80vh;
     
     text-align: center;
-    line-height: 90vh;
+    /* aligns the text vertically */
+    line-height: 80vh;
     
     font-weight: bold;
     font-size: 100px;
@@ -35,16 +36,14 @@ body{
 
 
 .scroll-element{
-    height: 10vh;
+    height: 20vh;
     text-align: center;
 }
 .animate-scroll{
-    height: 10vh;
     opacity: 0;
     height: 50px;
     width: 100px;
     animation: appear 2s 2s forwards, up-down 2s infinite;
-    
 }
 
 @keyframes appear{
