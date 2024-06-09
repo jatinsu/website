@@ -14,11 +14,13 @@ function App() {
       </div>
       <div className="hi-text">Hi.</div>
       {/* find a better way to do this */}
-      <div className="test"></div>
       <div className='scroll-element'>
           <img className='animate-scroll' src={DownArrow} alt="Down Arrow" />
       </div>
       <div className='content'>
+        <div className='content-text'>
+          <div>Hi I'm Jatin</div>
+        </div>
       </div>
             
     </>
