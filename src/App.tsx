@@ -1,5 +1,5 @@
-import React from 'react'
-import { useEffect } from 'react'
+// import React from 'react'
+// import { useEffect } from 'react'
 import './App.css'
 import DownArrow from './icons/down-arrow.svg'
 
