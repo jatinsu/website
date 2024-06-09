@@ -16,7 +16,7 @@ body{
     z-index: 1000;
     border: solid blue;
     border-radius: 10px;
-    box-shadow: 10px 0px 10px blue;
+
 
 }
 
@@ -34,6 +34,9 @@ body{
 
 }
 
+.test{
+    height: 100vh;
+}
 
 .scroll-element{
     height: 20vh;
@@ -46,6 +49,10 @@ body{
     animation: appear 2s 2s forwards, up-down 2s infinite;
 }
 
+.hide{
+    animation: disappear 2s forwards;
+}
+
 @keyframes appear{
     0%{
         opacity: 0;
@@ -54,6 +61,18 @@ body{
     100%{
         opacity: 1;
         transform: translateY(0%);
+    }
+
+}
+
+@keyframes disappear{
+    0%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(100%);
     }
 
 }
