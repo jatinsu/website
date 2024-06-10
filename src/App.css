@@ -30,7 +30,7 @@ body{
     
     font-weight: bold;
     font-size: 100px;
-    animation: animate 1s;
+    animation: hi-animate 1s;
 
 }
 
@@ -89,11 +89,13 @@ body{
     }
 }
 
-@keyframes animate{
+@keyframes hi-animate{
     0%{
+        opacity: 0;
         transform: scale(50%);
     }
     100%{
+        opacity: 1;
         transform: scale(100%);
     }
 }
