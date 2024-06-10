@@ -34,14 +34,16 @@ function App() {
         <div className="menu-item">Contact</div>
       </div>
       <div className="hi-text">Hi.</div>
-      {/* find a better way to do this */}
       <div className='scroll-element'>
 
         {<img className={`animate-scroll ${isVisible ? '' : 'hide'}`} src={DownArrow} alt="Down Arrow" />}
       </div>       
       <div className='content'>
         <div className='content-text'>
-          <div className='test'>Hi I'm Jatin</div>
+          <div className='intro'>I'm Jatin</div>
+          <div className='intro'>I'm a Developer</div>
+          <div className='test'>I</div>
+
         </div>
       </div>
       <div className='footer'>
