@@ -6,7 +6,15 @@ function Resume() {
    <> 
     <title>Resume</title>
     <div className='pdf-container'>
-        <embed src={resumePDF} type="application/pdf" height="750px" width="100%"></embed>
+    <iframe
+    title="Resume"
+    // did this by publishing repo as a page and then using the link to the pdf for google drive
+    src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://jatinsu.github.io/website/images/Resume.pdf"
+    frameBorder="0"
+    scrolling="auto"
+    height="850"
+    width="640"
+></iframe>
     </div>
    
    </>
