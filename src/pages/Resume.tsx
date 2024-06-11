@@ -1,5 +1,6 @@
 import './Resume.css'
 import { Helmet } from 'react-helmet'
+import Icon from '../../images/js.png'
 
 function Resume() {
   return (
@@ -13,6 +14,7 @@ function Resume() {
       <meta name="description" content="My Resume"/>
       <meta property="og:url" content="https://jatinsu.github.io/website/resume"/>
       <meta property="og:type" content="website"/>
+      <link rel="icon" href={Icon}/>
     </Helmet>
     <div className='pdf-container'>
         <iframe

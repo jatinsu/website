@@ -32,10 +32,6 @@ function Home() {
     <Helmet>
       {/* these are for embeds */}
       <title>My Portfolio</title>
-      <meta property="og:title" content="jatinsuri.com"/>
-      <meta property="og:description" content="My Portfolio website"/>
-      <meta property="og:image" content="https://jatinsu.github.io/website/images/embed.png"/>
-      <meta name="twitter:card" content="summary_large_image/"/>
       <link rel="icon" href={Icon}/>
     </Helmet>
     <NavLink to='/resume' className='resume-link'>Resume</NavLink>
