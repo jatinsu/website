@@ -1,13 +1,19 @@
 import './Resume.css'
+import { Helmet } from 'react-helmet'
 
 function Resume() {
   return (
    <> 
-    <meta property="og:title" content="My Resume"/>
-    <meta property="og:description" content="Testing"/>
-    <meta property="og:image" content="/images/resume-embed.png"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <title>Resume</title>
+    <Helmet>
+      <meta property="og:title" content="My Resume"/>
+      <meta property="og:description" content="Testing"/>
+      <meta property="og:image" content="/images/resume-embed.png"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <title>Resume</title>
+      <meta name="description" content="My Resume"/>
+      <meta property="og:url" content="https://jatinsu.github.io/website/resume"/>
+      <meta property="og:type" content="website"/>
+    </Helmet>
     <div className='pdf-container'>
         <iframe
             title="Resume"
