@@ -33,6 +33,11 @@ function Home() {
       {/* these are for embeds */}
       <title>My Portfolio</title>
       <link rel="icon" href={Icon}/>
+      <meta property="og:title" content="My Portfolio Website"/>
+      <meta property="og:description" content="Welcome to my portfolio website. Explore my projects and skills as a developer."/>
+      <meta property="og:image" content="https://jatinsu.github.io/website/images/embed.png"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <title>My Portfolio</title>
     </Helmet>
     <NavLink to='/resume' className='resume-link'>Resume</NavLink>
     <div className='menu'>
