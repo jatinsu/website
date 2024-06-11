@@ -2,6 +2,10 @@ body{
     background-color: #131313
 }
 
-.pdf-container{
-    text-align: center;
+
+
+.pdf-container iframe{
+    width: 100%;
+    height: 89vh;
+    border: none;
 }
