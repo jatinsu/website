@@ -6,13 +6,13 @@ function Resume() {
   return (
    <> 
     <Helmet>
-      <title>Resume</title>
-      <meta property="og:title" content="My Resume"/>
+      <title>My Resumé</title>
+      <meta property="og:title" content="My Résumé"/>
       <meta property="og:description" content="Jatin Suri's Resume"/>
-      <meta property="og:image" content="/images/resume-embed.png"/>
+      <meta property="og:image" content=""/>
       <meta name="twitter:card" content="summary_large_image"/>
       <meta name="description" content="My Resume"/>
-      <meta property="og:url" content="https://jatinsu.github.io/website/resume"/>
+      <meta property="og:url" content="https://jatinsu.github.io/website/images/Resume.pdf"/>
       <meta property="og:type" content="website"/>
       <link rel="icon" href={Icon}/>
     </Helmet>
