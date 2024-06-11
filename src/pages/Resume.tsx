@@ -5,11 +5,11 @@ function Resume() {
   return (
    <> 
     <Helmet>
+      <title>Resume</title>
       <meta property="og:title" content="My Resume"/>
-      <meta property="og:description" content="Testing"/>
+      <meta property="og:description" content="Jatin Suri's Resume"/>
       <meta property="og:image" content="/images/resume-embed.png"/>
       <meta name="twitter:card" content="summary_large_image"/>
-      <title>Resume</title>
       <meta name="description" content="My Resume"/>
       <meta property="og:url" content="https://jatinsu.github.io/website/resume"/>
       <meta property="og:type" content="website"/>

@@ -1,6 +1,5 @@
 import DownArrow from '../icons/down-arrow.svg'
 import Icon from '../../images/js.png'
-import Embed from '../../images/embed.png'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import './Home.css'
@@ -35,7 +34,7 @@ function Home() {
       <title>My Portfolio</title>
       <meta property="og:title" content="jatinsuri.com"/>
       <meta property="og:description" content="My Portfolio website"/>
-      <meta property="og:image" content={Embed}/>
+      <meta property="og:image" content="https://jatinsu.github.io/website/images/embed.png"/>
       <meta name="twitter:card" content="summary_large_image/"/>
       <link rel="icon" href={Icon}/>
     </Helmet>
