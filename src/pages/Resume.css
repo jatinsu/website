@@ -2,10 +2,22 @@ body{
     background-color: #131313
 }
 
-
-
 .pdf-container iframe{
     width: 100%;
     height: 89vh;
     border: none;
+}
+
+.pdf-embed{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* this is for changing the iframe for mobile */
+@media (max-width: 768px){
+    .pdf-container iframe{
+        overflow: hidden;
+        object-fit: fill;
+    }
 }

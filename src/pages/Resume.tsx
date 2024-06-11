@@ -9,12 +9,11 @@ function Resume() {
     <meta name="twitter:card" content="summary_large_image"/>
     <title>Resume</title>
     <div className='pdf-container'>
-        <iframe
+        <iframe className='pdf-embed'
             title="Resume"
             // did this by publishing repo as a page and then using the link to the pdf for google drive
             src="https://jatinsu.github.io/website/images/Resume.pdf"
-            height="882"
-            width="640"
+
         ></iframe>
     </div>
    
