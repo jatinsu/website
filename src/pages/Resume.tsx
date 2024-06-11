@@ -9,15 +9,8 @@ function Resume() {
     <meta name="twitter:card" content="summary_large_image"/>
     <title>Resume</title>
     <div className='pdf-container'>
-        <iframe
-            title="Resume"
-            // did this by publishing repo as a page and then using the link to the pdf for google drive
-            src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://jatinsu.github.io/website/images/Resume.pdf"
-            height="850"
-            width="640"
-        ></iframe>
+    <iframe src="https://drive.google.com/file/d/1Dsob3l0dWCHXK3ZYo9Mp9n2ya7Tn7Io4/preview" width="640" height="850" allow="autoplay"></iframe>
     </div>
-   
    </>
   )
 }
