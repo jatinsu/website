@@ -1,8 +1,11 @@
 import DownArrow from '../icons/down-arrow.svg'
+import Icon from '../../images/js.png'
+import Embed from '../../images/embed.png'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import './Home.css'
 import { NavLink } from 'react-router-dom'
+import {Helmet} from 'react-helmet'
 
 function Home() {
   // thanks to https://javascript.plainenglish.io/hiding-dom-elements-in-react-based-on-scrolling-d9a9ef1f1f5
@@ -27,6 +30,15 @@ function Home() {
 
   return (
     <>
+    <Helmet>
+      {/* these are for embeds */}
+      <title>My Portfolio</title>
+      <meta property="og:title" content="jatinsuri.com"/>
+      <meta property="og:description" content="My Portfolio website"/>
+      <meta property="og:image" content={Embed}/>
+      <meta name="twitter:card" content="summary_large_image/"/>
+      <link rel="icon" href={Icon}/>
+    </Helmet>
     <NavLink to='/resume' className='resume-link'>Resume</NavLink>
     <div className='menu'>
     <div className="menu-item">About</div>
