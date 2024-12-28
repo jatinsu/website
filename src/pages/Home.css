@@ -2,22 +2,8 @@
 
 body{
     background-color: black;
-    color: blue;
+    color: rgb(80, 80, 239);
     font-family: 'Varela Round', sans-serif;
-}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 25%;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1000;
-    border: solid blue;
-    border-radius: 10px;
-
-
 }
 
 .hi-text{
