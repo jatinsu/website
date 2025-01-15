@@ -53,8 +53,9 @@ body {
 .name {
   font-size: 70px;
   animation: fontSwitch 5s infinite ease-in-out;
+  line-height: 1.2; /* Added so the elements below it don't move */
 }
 
-.description{
-  padding-top: 10px;
+.description {
+ padding-top: 10px;
 }
