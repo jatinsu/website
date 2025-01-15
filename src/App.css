@@ -8,11 +8,13 @@ body {
     #000033 75%,
     black 100%
   );
+  background-color: black;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   padding-left: 20px;
   color: #d4dcec;
+  overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -24,38 +26,33 @@ body {
 }
 
 @keyframes fontSwitch {
-  0%, 12.5% {
+  0%, 16.66% {
     font-family: 'Varela Round', sans-serif;
   }
-  12.5%, 25% {
+  16.66%, 33.32% {
     font-family: 'Fredoka', sans-serif;
   }
-  25%, 37.5% {
+  33.32%, 49.98% {
     font-family: 'Arial Black', sans-serif;
   }
-  37.5%, 50% {
+  49.98%, 66.64% {
     font-family: 'Impact', sans-serif;
   }
-  50%, 62.5% {
-    font-family: 'Trebuchet MS', sans-serif;
-  }
-  62.5%, 75% {
+  66.64%, 83.3% {
     font-family: 'Georgia', serif;
   }
-  75%, 87.5% {
+  83.3%, 100% {
     font-family: 'Courier New', monospace;
-  }
-  87.5%, 100% {
-    font-family: 'Lucida Console', monospace;
   }
 }
 
 .name {
   font-size: 70px;
   animation: fontSwitch 5s infinite ease-in-out;
-  line-height: 1.2; /* Added so the elements below it don't move */
+  line-height: 1.2;
 }
 
 .description {
  padding-top: 10px;
+ padding-bottom: 1000px;
 }
