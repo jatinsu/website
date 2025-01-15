@@ -20,7 +20,6 @@ body {
 
 .intro {
   font-size: 70px;
-  width: 100%;
   text-align: left;
   padding-top: 35vh;
 }
@@ -50,9 +49,33 @@ body {
   font-size: 70px;
   animation: fontSwitch 5s infinite ease-in-out;
   line-height: 1.2;
+  width: 40%;
 }
 
 .description {
  padding-top: 10px;
- padding-bottom: 1000px;
+}
+
+.dev_image{
+  border-radius: 1000px;
+  width:50%;
+}
+
+@media screen and (max-width: 600px) {
+  .intro{
+    width: 100%;
+    padding-top: 20vh;
+  }
+
+  .name {
+    width: 105%;
+  }
+  .description {
+    padding-top: 10px;
+    padding-bottom: 1000px;
+  }
+  .dev_image{
+    display: none;
+  }
+  
 }
