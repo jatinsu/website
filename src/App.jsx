@@ -1,5 +1,6 @@
 import './App.css'
 import Tools from './Tools'
+import DevImage from './assets/dev-image.png'
 function App() {
 
   return (
@@ -12,7 +13,7 @@ function App() {
         </div>
 
         <div className='image-container'>
-          <img className='dev_image' src="src/assets/dev-image.png" alt="" />
+          <img src={DevImage} alt='dev' className='dev_image' />
         </div>
       </div>
       <Tools />
