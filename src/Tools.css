@@ -1,0 +1,16 @@
+.tools-container {
+    display: flex;
+    justify-content: center;
+}
+
+.tools {
+    color: black;
+    border-radius: 100px;
+    border-color: black;
+    padding: 10px;
+    background-color: white;
+}
+
+.placeholder {
+    min-height: 90vh;
+}

@@ -1,5 +1,5 @@
 import './App.css'
-
+import Tools from './Tools'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
           <img className='dev_image' src="src/assets/dev-image.png" alt="" />
         </div>
       </div>
+      <Tools />
     </>
   )
 }
