@@ -1,5 +1,5 @@
 import './Resume.css'
-import ResumePDF from './assets/Resume.pdf'
+import ResumePDF from '../assets/Resume.pdf'
 
 function Resume() {
   return (
