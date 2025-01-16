@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
   color: #d4dcec;
   overflow-x: hidden;
   font-family: 'Varela Round', sans-serif;
@@ -21,7 +20,6 @@ body {
 .intro {
   font-size: 70px;
   text-align: left;
-  padding-top: 35vh;
 }
 
 @keyframes fontSwitch {
@@ -49,7 +47,7 @@ body {
   font-size: 70px;
   animation: fontSwitch 5s infinite ease-in-out;
   line-height: 1.2;
-  width: 40%;
+  width: 100%;
 }
 
 .description {
@@ -58,10 +56,39 @@ body {
 
 .dev_image{
   border-radius: 1000px;
-  width:50%;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  padding-top: 30vh;
+  gap: 2rem;
+}
+
+.text-container {
+  order: 1;
+  width: 45%;
+}
+
+.image-container {
+  order: 2;
+  width: 45%; 
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    order: 1;
+  }
+
   .intro{
     width: 100%;
     padding-top: 20vh;
