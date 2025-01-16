@@ -1,6 +1,7 @@
 import './App.css'
 import Tools from './Tools'
 import DevImage from './assets/dev-image.png'
+import Resume from './Resume'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
         </div>
       </div>
       <Tools />
+      <Resume />
     </>
   )
 }
