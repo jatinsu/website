@@ -1,13 +1,30 @@
 import { createRoot } from 'react-dom/client'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
-import { BrowserRouter as Router, Route, BrowserRouter, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
-createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === '/resume') {
+      document.title = 'My Resume';
+    } else {
+      document.title = 'My Portfolio';
+    }
+  }, [location]);
+
+  return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>
-  </BrowserRouter>
+  );
+}
+
+createRoot(document.getElementById('root')).render(
+  <Router>
+    <App />
+  </Router>
 )
