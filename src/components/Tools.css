@@ -1,16 +1,27 @@
-.tools-container {
+/* .tools-container {
     display: flex;
     justify-content: center;
-}
+} */
 
 .tools {
     color: black;
     border-radius: 100px;
     border-color: black;
     padding: 10px;
-    background-color: white;
+    background-color: #d4dcec;
 }
 
 .placeholder {
+    display: flex;
+    justify-content: center;
     min-height: 90vh;
+    background-color: #eaae5b;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: border-radius 0.8s ease-out;
+}
+
+.animate-border {
+    border-top-left-radius: 50px !important;
+    border-top-right-radius: 50px !important;
 }

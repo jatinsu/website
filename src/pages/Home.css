@@ -8,13 +8,14 @@ body {
     #000033 75%,
     black 100%
   );
+  color: #d4dcec;
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
   background-color: black;
-  min-height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
-  color: #d4dcec;
-  overflow-x: hidden;
-  font-family: 'Varela Round', sans-serif;
 }
 
 .intro {
@@ -61,6 +62,13 @@ body {
 }
 
 .container {
+  /* background gradiant */
+
+  /* border-bottom: 5px solid #d4dcec;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px; */
+
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +87,8 @@ body {
   width: 45%; 
 }
 
+
+/* for mobile */
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
