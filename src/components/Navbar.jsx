@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
-        LOGO
+        <img src="logo.svg" alt="" />
       </div>
       
       <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>

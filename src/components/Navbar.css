@@ -2,11 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 97%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem;
   transition: background-color 0.3s ease;
   z-index: 1000;
 }
@@ -19,6 +19,11 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+}
+
+.logo img {
+  width: 43px;
+  height: auto;
 }
 
 .nav-links {
@@ -111,5 +116,9 @@
 
   .navbar {
     width: 93%;
+  }
+
+  .logo img {
+    width: 40px;
   }
 }
