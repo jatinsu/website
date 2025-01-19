@@ -1,10 +1,12 @@
 import './Home.css'
 import Tools from '../components/Tools'
 import DevImage from '../assets/dev-image.png'
+import Navbar from '../components/Navbar'
 function Home() {
 
   return (
     <>
+      <Navbar />
       <div className='container'>
         <div className='text-container'>
           <div className='intro'>Hey, my name is</div>
