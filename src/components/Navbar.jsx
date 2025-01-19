@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import logo from '../../logo.svg'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
-        <img src="logo.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
       
       <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
