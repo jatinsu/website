@@ -18,7 +18,8 @@ function Home() {
           <img src={DevImage} alt='dev' className='dev_image' />
         </div>
       </div>
-        <Tools />
+      <Tools />
+      <div className='placeholder' style={{minHeight: '100vh'}}></div>
     </>
   )
 }

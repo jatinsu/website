@@ -1,37 +1,32 @@
-import { useEffect, useRef } from 'react';
 import './Tools.css'
+import cplusIcon from '../assets/icons/cplus.svg'
+import pythonIcon from '../assets/icons/python.svg'
+import reactIcon from '../assets/icons/react.svg'
+import htmlIcon from '../assets/icons/html.svg'
+
 
 function Tools(){
-    const placeholderRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-border');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        if (placeholderRef.current) {
-            observer.observe(placeholderRef.current);
-        }
-
-        return () => {
-            if (placeholderRef.current) {
-                observer.unobserve(placeholderRef.current);
-            }
-        };
-    }, []);
+    const tools = [
+        { name: 'C++', icon: cplusIcon },
+        { name: 'Python', icon: pythonIcon },
+        { name: 'React', icon: reactIcon },
+        { name: 'HTML', icon: htmlIcon },
+    ];
 
     return(
         <>
-            <div className='placeholder' ref={placeholderRef}>
+            <div className='tools-section'>
                 <div className="tools-container">
-                    <div className='tools'>Tools</div>
+                <div className='tools'>Tools</div>
+                    <div className='tools-grid'>
+                        {tools.map((tool, index) => (
+                            <div key={index} className='tool-icon'>
+                                <img src={tool.icon} alt={tool.name} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
-            
         </>
     )
 }
