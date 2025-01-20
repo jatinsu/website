@@ -56,19 +56,12 @@ body {
 }
 
 .dev_image{
-  border-radius: 1000px;
   width: 100%;
   padding-left: 0px;
+  max-width: 950px;
 }
 
 .container {
-  /* background gradiant */
-
-  /* border-bottom: 5px solid #d4dcec;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px; */
-
-  
   display: flex;
   align-items: center;
   justify-content: center;
