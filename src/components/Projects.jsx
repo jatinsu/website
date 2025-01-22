@@ -4,6 +4,9 @@ import leftArrow from '../assets/icons/left-arrow.svg';
 import rightArrow from '../assets/icons/right-arrow.svg';
 import campusLFG from '../assets/projects/campus-lfg.png';
 import discordBot from '../assets/projects/discord-bot.png';
+import website from '../assets/projects/website.png';
+import flashcards from '../assets/projects/flashcards.png';
+import cadModels from '../assets/projects/cad-models.png';
 import { useRef } from 'react';
 
 function Projects(){
@@ -22,14 +25,14 @@ function Projects(){
     const projects = [
         { name: 'Campus-LFG', description: 'Gaming for Colleges.', background: campusLFG },
         { name: 'Discord Bot', description: 'Discord bot focused on gaming.', background: discordBot },
-        { name: 'Project 3', description: 'Description 3', background: exampleBackground },
-        { name: 'Project 4', description: 'Description 4', background: exampleBackground },
-        { name: 'Project 5', description: 'Description 5', background: exampleBackground },
+        { name: 'My Portfolio Website', description: 'The website you\'re currently viewing.', background: website },
+        { name: 'Cad Models', description: 'A collection of models I created', background: cadModels },
+        { name: 'FlashCards', description: 'A TUI version of Flashcards', background: flashcards },
     ];
 
     return(
         <>
-            <div className='project-header'>My Projects.</div>
+            <div className='project-header'>My Projects</div>
             <div className='projects-container' ref={scrollContainerRef}>
                 {projects.map((project, index) => (
                     <div key={index} className='project'>
@@ -40,6 +43,7 @@ function Projects(){
                             <div className='project-name'>{project.name}</div>
                             <div className='project-description'>{project.description}</div>
                         </div>
+                        <button className='learn-more-btn'>Learn More</button>
                     </div>
                 ))}
             </div>

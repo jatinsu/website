@@ -1,19 +1,22 @@
 .project-header{
     font-size: 2rem;
     padding-top: 150px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     padding-left: 8.5%;
 }
 
 .projects-container {
     display: flex;
     gap: 2rem;
-    padding: 0 8.5%;
+    padding: 1rem 8.5%;
     margin-bottom: 2rem;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
+    min-height: 600px;
+    height: fit-content;
 }
 
 .projects-container::-webkit-scrollbar {
@@ -22,11 +25,19 @@
 
 .project {
     position: relative;
-    height: 700px; 
+    height: 600px; 
     border-radius: 15px;
     overflow: hidden;
     min-width: 300px;
     width: 40%;
+    transition: all 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 .project-background {
@@ -49,7 +60,7 @@
     z-index: 2;
     padding: 1.5rem;
     color: #d4dcec;
-    background: linear-gradient(rgba(0,0,0,0.7), transparent);
+    background: linear-gradient(rgba(0,0,0,0.9), transparent);
 }
 
 .project-name {
@@ -91,4 +102,22 @@
 .scroll-button img {
     width: 20px;
     height: 20px;
+}
+
+.learn-more-btn {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.learn-more-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
