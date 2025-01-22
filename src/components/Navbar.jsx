@@ -33,7 +33,7 @@ const Navbar = () => {
         <a href="/resume">
             <button onClick={() => setIsMobileMenuOpen(false)}>Resume</button>
         </a>
-        <button onClick={() => setIsMobileMenuOpen(false)}>Projects</button>
+        <button onClick={() => setIsMobileMenuOpen(false)}>About</button>
         <button onClick={() => setIsMobileMenuOpen(false)}>Experience</button>
       </div>
 
