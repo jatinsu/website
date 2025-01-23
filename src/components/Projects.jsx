@@ -1,5 +1,4 @@
 import './Projects.css';
-import exampleBackground from '../assets/dev-image.png';
 import leftArrow from '../assets/icons/left-arrow.svg';
 import rightArrow from '../assets/icons/right-arrow.svg';
 import campusLFG from '../assets/projects/campus-lfg.png';
@@ -7,10 +6,12 @@ import discordBot from '../assets/projects/discord-bot.png';
 import website from '../assets/projects/website.png';
 import flashcards from '../assets/projects/flashcards.png';
 import cadModels from '../assets/projects/cad-models.png';
-import { useRef } from 'react';
+import openButton from '../assets/icons/open-button.svg';
+import { useRef, useState } from 'react';
 
 function Projects(){
     const scrollContainerRef = useRef(null);
+    const [expandedIndex, setExpandedIndex] = useState(null);
     
     const scroll = (direction) => {
         const container = scrollContainerRef.current;
@@ -20,6 +21,12 @@ function Projects(){
             left: direction === 'left' ? -scrollAmount : scrollAmount,
             behavior: 'smooth'
         });
+    };
+
+    const handleProjectClick = (index, e) => {
+        // Prevent triggering when clicking the learn more button
+        if (e.target.closest('.learn-more-btn')) return;
+        setExpandedIndex(expandedIndex === index ? null : index);
     };
 
     const projects = [
@@ -35,15 +42,29 @@ function Projects(){
             <div className='project-header'>My Projects</div>
             <div className='projects-container' ref={scrollContainerRef}>
                 {projects.map((project, index) => (
-                    <div key={index} className='project'>
+                    <div 
+                        key={index} 
+                        className={`project ${expandedIndex === index ? 'expanded' : ''}`}
+                        onClick={(e) => handleProjectClick(index, e)}
+                    >
                         <div className='project-background'>
                             <img src={project.background} alt={project.name} />
                         </div>
                         <div className='project-info'>
                             <div className='project-name'>{project.name}</div>
-                            <div className='project-description'>{project.description}</div>
+                            <div className='project-description'>
+                                {project.description}
+                                {expandedIndex === index && (
+                                    <div className='expanded-content'>
+                                        <p>Expanded view of {project.name}</p>
+                                        <p>Add more project details here...</p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                        <button className='learn-more-btn'>Learn More</button>
+                        <button className='learn-more-btn'>
+                            <img src={openButton} alt="Learn more" />
+                        </button>
                     </div>
                 ))}
             </div>
