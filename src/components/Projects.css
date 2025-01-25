@@ -29,7 +29,7 @@
     border-radius: 15px;
     overflow: hidden;
     min-width: 300px;
-    width: 40%;
+    width: 20%;
     transition: all 0.3s ease-in-out;
     transform-origin: center;
     cursor: pointer;
@@ -42,7 +42,7 @@
 }
 
 .project.expanded {
-    width: 80%;
+    width: 80%; 
     z-index: 20;
 }
 

@@ -29,6 +29,10 @@ function Projects(){
         setExpandedIndex(expandedIndex === index ? null : index);
     };
 
+    const handleLearnMoreClick = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
+
     const projects = [
         { name: 'Campus-LFG', description: 'Gaming for Colleges.', background: campusLFG },
         { name: 'Discord Bot', description: 'Discord bot focused on gaming.', background: discordBot },
@@ -46,6 +50,7 @@ function Projects(){
                         key={index} 
                         className={`project ${expandedIndex === index ? 'expanded' : ''}`}
                         onClick={(e) => handleProjectClick(index, e)}
+                        style={{ flex: expandedIndex === index ? '0 0 80%' : '0 0 20%' }}
                     >
                         <div className='project-background'>
                             <img src={project.background} alt={project.name} />
@@ -62,7 +67,10 @@ function Projects(){
                                 )}
                             </div>
                         </div>
-                        <button className='learn-more-btn'>
+                        <button 
+                            className='learn-more-btn'
+                            onClick={() => handleLearnMoreClick(index)}
+                        >
                             <img src={openButton} alt="Learn more" />
                         </button>
                     </div>
