@@ -1,6 +1,5 @@
 import './About.css';
 import Navbar from '../components/Navbar';
-import githubIcon from '../assets/icons/github.svg';
 import { useLanyard } from 'react-use-lanyard';
 
 const About = () => {
