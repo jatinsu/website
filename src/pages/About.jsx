@@ -40,7 +40,7 @@ const About = () => {
                             <div key={index}>
                                 <div>Listening to {activity.name}</div>
                                 <div>{activity.details}</div>
-                                <div>by {activity.state}</div>
+                                <div>{activity.state}</div>
                             </div>
                         )
                     ))}
