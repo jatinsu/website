@@ -35,7 +35,7 @@ const About = () => {
                 <div className='currently-listening'>
                     <div>Listening to {lanyard.data.data.activities[0].name}</div>
                     <div>{lanyard.data.data.activities[0].details}</div>
-                    <div>{lanyard.data.data.activities[0].state}</div>
+                    <div>by {lanyard.data.data.activities[0].state}</div>
                 </div>
             )}
         </div>
