@@ -1,0 +1,17 @@
+body {
+    background: radial-gradient(circle at top left,
+      black 0%,
+      #000033 25%,
+      #000066 40%,
+      #000033 75%,
+      black 100%
+    );
+    color: #d4dcec;
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    background-color: black;
+    padding: 0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }

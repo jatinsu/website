@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import Home from './pages/Home'
 import Resume from './pages/Resume'
 import About from './pages/About'
+import './main.css'
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
