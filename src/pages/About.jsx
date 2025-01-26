@@ -15,7 +15,10 @@ const About = () => {
                     <div className='about-text'>
                         <div className='about-title'>About Me</div>
                         <div className='about-description'>
-                            I'm a Software Engineer based out of Maryland. I specialize in cloud computing and in frontend development. I'm passionate about learning new things and I love to share my knowledge with others.
+                            I specialize in cloud computing and in frontend development.
+                        </div>
+                        <div className='about-description-small'>
+                            I love learning new things and sharing that knowledge with others. I'm currently a student at the University of Maryland, Baltimore County studying Computer Science and will be joining Red Hat as a Software Engineer in Summer 2025. Some of my hobbies include Rock Climbing, 3D printing, and playing video games.
                         </div>
                         <div className='social-links'>
                             <a href="https://github.com/jatinsu" target="_blank" rel="noopener noreferrer">
