@@ -31,11 +31,19 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            {(lanyard.data?.data.activities[0]?.name === "Apple Music" || lanyard.data?.data.activities[0]?.name === "Spotify") && (
+            {lanyard.data?.data.activities.some(activity => 
+                activity.name === "Apple Music" || activity.name === "Spotify"
+            ) && (
                 <div className='currently-listening'>
-                    <div>Listening to {lanyard.data.data.activities[0].name}</div>
-                    <div>{lanyard.data.data.activities[0].details}</div>
-                    <div>by {lanyard.data.data.activities[0].state}</div>
+                    {lanyard.data.data.activities.map((activity, index) => (
+                        (activity.name === "Apple Music" || activity.name === "Spotify") && (
+                            <div key={index}>
+                                <div>Listening to {activity.name}</div>
+                                <div>{activity.details}</div>
+                                <div>by {activity.state}</div>
+                            </div>
+                        )
+                    ))}
                 </div>
             )}
         </div>
