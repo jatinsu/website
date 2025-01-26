@@ -34,11 +34,11 @@ function Projects(){
     };
 
     const projects = [
-        { name: 'Campus-LFG', description: 'Gaming for Colleges.', background: campusLFG },
-        { name: 'Discord Bot', description: 'Discord bot focused on gaming.', background: discordBot },
-        { name: 'My Portfolio Website', description: 'The website you\'re currently viewing.', background: website },
-        { name: 'Cad Models', description: 'A collection of models I created', background: cadModels },
-        { name: 'FlashCards', description: 'A TUI version of Flashcards', background: flashcards },
+        { name: 'Campus-LFG', description: 'Gaming for Colleges.', background: campusLFG, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
+        { name: 'Discord Bot', description: 'Discord bot focused on gaming.', background: discordBot, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
+        { name: 'My Portfolio Website', description: 'The website you\'re currently viewing.', background: website, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
+        { name: 'Cad Models', description: 'A collection of models I created', background: cadModels, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
+        { name: 'FlashCards', description: 'A TUI version of Flashcards', background: flashcards, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
     ];
 
     return(
@@ -61,8 +61,8 @@ function Projects(){
                                 {project.description}
                                 {expandedIndex === index && (
                                     <div className='expanded-content'>
-                                        <p>Expanded view of {project.name}</p>
-                                        <p>Add more project details here...</p>
+                                        <p>{project.expandedView}</p>
+                                        <p>{project.projectDetails}</p>
                                     </div>
                                 )}
                             </div>
