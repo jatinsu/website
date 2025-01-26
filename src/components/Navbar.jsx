@@ -33,8 +33,12 @@ const Navbar = () => {
         <a href="/resume">
             <button onClick={() => setIsMobileMenuOpen(false)}>Resume</button>
         </a>
-        <button onClick={() => setIsMobileMenuOpen(false)}>About</button>
-        <button onClick={() => setIsMobileMenuOpen(false)}>Experience</button>
+        <a href="/about">
+            <button onClick={() => setIsMobileMenuOpen(false)}>About</button>
+        </a>
+        <a href="/experience">
+            <button onClick={() => setIsMobileMenuOpen(false)}>Experience</button>
+        </a>
       </div>
 
       <div className={`contact ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
