@@ -1,6 +1,6 @@
 .pdf-container iframe{
     position: fixed;
-    top: 0px;
+    top: 80px;  /* Adjusted to make space for navbar */
     bottom: 0px;
     right: 0px;
     width: 100%;
@@ -8,6 +8,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    z-index: 999999;
-    height: 100%;
+    z-index: 1;  /* Lowered z-index so navbar stays on top */
+    height: calc(100% - 80px);  /* Adjust height to account for navbar */
 }
