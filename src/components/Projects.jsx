@@ -34,11 +34,56 @@ function Projects(){
     };
 
     const projects = [
-        { name: 'Campus-LFG', description: 'Gaming for Colleges.', background: campusLFG, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
-        { name: 'Discord Bot', description: 'Discord bot focused on gaming.', background: discordBot, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
-        { name: 'My Portfolio Website', description: 'The website you\'re currently viewing.', background: website, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
-        { name: 'Cad Models', description: 'A collection of models I created', background: cadModels, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
-        { name: 'FlashCards', description: 'A TUI version of Flashcards', background: flashcards, expandedView: 'Expanded view of Campus-LFG', projectDetails: 'Add more project details here...' },
+        {   
+            name: 'Campus-LFG', 
+            description: 'Gaming for Colleges.', 
+            background: campusLFG, 
+            expandedView: 
+            <div>
+                <a href="https://youtu.be/OrGEcA5Bsd8">Demo of project</a>
+                <p>This is a Full stack website created using React for the frontend and SQL with NodeJS for the backend. It has alot of features, including</p>
+                <ul>
+                    <li>Creating an account</li>
+                    <li>Creating and joining a group</li>
+                    <li>Viewing a list of groups in a particular game</li>
+                    <li>Sending/recieving messages to a group or to a user</li>
+                </ul>
+                <a href="https://github.com/JNC-Enterprise/campus-lfg">Source Code </a>
+            </div>
+            
+        },
+        { 
+            name: 'Discord Bot', 
+            description: 'Discord bot focused on gaming.', 
+            background: discordBot, 
+            expandedView:
+            <div>
+                <a href="https://github.com/jatinsu/ValorantDiscordBot">Source Code</a>
+                <p>
+                    A discord bot created using Python and Discordpy. It has a user friendly interface as it's used through Discord, and it supports discords slash commands. You are able to search GIFs, ask it to give you a specific Agent/Map, ask it to repeat what you said, and more.
+                    It is hosted on Oracle Cloud, and you are able to add it to your server by clicking the link below.
+                </p>
+                <a href="">Add to Discord</a>
+            </div>
+        },
+        { 
+            name: 'My Portfolio Website', 
+            description: 'The website you\'re currently viewing.', 
+            background: website, 
+            expandedView: 'Expanded view of Campus-LFG'
+        },
+        { 
+            name: 'Cad Models', 
+            description: 'A collection of models I created', 
+            background: cadModels, 
+            expandedView: 'Expanded view of Campus-LFG'
+        },
+        { 
+            name: 'FlashCards', 
+            description: 'A TUI version of Flashcards', 
+            background: flashcards, 
+            expandedView: 'Expanded view of Campus-LFG'
+        }
     ];
 
     return(
@@ -62,7 +107,6 @@ function Projects(){
                                 {expandedIndex === index && (
                                     <div className='expanded-content'>
                                         <p>{project.expandedView}</p>
-                                        <p>{project.projectDetails}</p>
                                     </div>
                                 )}
                             </div>
