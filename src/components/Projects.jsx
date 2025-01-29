@@ -58,31 +58,43 @@ function Projects(){
             background: discordBot, 
             expandedView:
             <div>
-                <a href="https://github.com/jatinsu/ValorantDiscordBot">Source Code</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=1039737313711886397">Add to Discord</a>
                 <p>
                     A discord bot created using Python and Discordpy. It has a user friendly interface as it's used through Discord, and it supports discords slash commands. You are able to search GIFs, ask it to give you a specific Agent/Map, ask it to repeat what you said, and more.
                     It is hosted on Oracle Cloud, and you are able to add it to your server by clicking the link below.
                 </p>
-                <a href="">Add to Discord</a>
+                <a href="https://github.com/jatinsu/ValorantDiscordBot">Source Code</a>
             </div>
         },
         { 
             name: 'My Portfolio Website', 
             description: 'The website you\'re currently viewing.', 
             background: website, 
-            expandedView: 'Expanded view of Campus-LFG'
+            expandedView: 
+            <div>
+                <p>Written in React. It is hosted on Netlify and uses github for version control/host of files</p>
+                <a href="https://github.com/jatinsu/website">Source Code</a>
+            </div>
         },
         { 
             name: 'Cad Models', 
             description: 'A collection of models I created', 
             background: cadModels, 
-            expandedView: 'Expanded view of Campus-LFG'
+            expandedView:
+            <div>
+                <p>A collection of CAD models that I created in Autodesk Inventor/Fusion 360 for my 3D printer</p>
+                <a href="https://github.com/jatinsu/CAD-Models">Source Code</a>
+            </div>
         },
         { 
             name: 'FlashCards', 
             description: 'A TUI version of Flashcards', 
             background: flashcards, 
-            expandedView: 'Expanded view of Campus-LFG'
+            expandedView:
+            <div>
+                <p>A text based flashcard program that I created in C++. It uses a linked list to store the flashcards and the user is able to add, delete, and view the flashcards</p>
+                <a href="https://github.com/jatinsu/FlashCards">Source Code</a>
+            </div>
         }
     ];
 
