@@ -41,7 +41,7 @@ function Projects(){
             expandedView: 
             <div>
                 <a href="https://youtu.be/OrGEcA5Bsd8">Demo of project</a>
-                <p>This is a Full stack website created using React for the frontend and SQL with NodeJS for the backend. It has alot of features, including</p>
+                <p>This is a Full stack website I helped using React for the frontend and SQL with NodeJS for the backend. It has alot of features, including</p>
                 <ul>
                     <li>Creating an account</li>
                     <li>Creating and joining a group</li>
