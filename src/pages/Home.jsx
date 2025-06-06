@@ -3,6 +3,7 @@ import Tools from '../components/Tools'
 import DevImage from '../assets/dev-image.png'
 import Navbar from '../components/Navbar'
 import Projects from '../components/Projects'
+import Timeline from '../components/Timeline'
 function Home() {
 
   return (
@@ -21,7 +22,8 @@ function Home() {
       </div>
       <Tools />
       <Projects />
-      <div className='placeholder' style={{minHeight: '100vh'}}></div>
+      <Timeline />
+      <div className='placeholder' style={{ minHeight: '100vh' }}></div>
     </>
   )
 }
