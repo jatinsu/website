@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../logo.svg'
 
@@ -19,10 +19,10 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
         <a href="/">
-            <img src={logo} alt="" />
+          <img src={logo} alt="" />
         </a>
       </div>
-      
+
       <div className="hamburger" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
         <span></span>
         <span></span>
@@ -31,13 +31,13 @@ const Navbar = () => {
 
       <div className={`nav-links ${isMobileMenuOpen ? 'mobile-active' : ''}`}>
         <a href="/">
-            <button onClick={() => setIsMobileMenuOpen(false)}>Home</button>
+          <button onClick={() => setIsMobileMenuOpen(false)}>Home</button>
         </a>
         <a href="/about">
-            <button onClick={() => setIsMobileMenuOpen(false)}>About</button>
+          <button onClick={() => setIsMobileMenuOpen(false)}>About</button>
         </a>
         <a href="/resume">
-            <button onClick={() => setIsMobileMenuOpen(false)}>Resume</button>
+          <button onClick={() => setIsMobileMenuOpen(false)}>Resume</button>
         </a>
       </div>
 
